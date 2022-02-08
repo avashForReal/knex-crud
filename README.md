@@ -240,4 +240,3 @@ URL: localhost:8080/user
 ---
 [Back to top](#knex-crud)
 
->Generated at 2022-02-09 01:03:59 by [docgen](https://github.com/thedevsaddam/docgen)
