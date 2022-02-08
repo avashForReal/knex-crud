@@ -1,1 +1,1 @@
-# crud-express
+# knex-crud
