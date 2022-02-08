@@ -28,6 +28,6 @@ router.route('/')
 router.route('/:id')
     .get(getUser) // get a user
     .delete(deleteUser) //delete a user
-    .patch(updateUserValidationRules(), validate, checkExistingEmail, updateUser) //update a user
+    .patch(updateUserValidationRules(), validate, updateUser) //update a user
 
 module.exports = router

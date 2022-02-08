@@ -106,6 +106,18 @@ const updateUser = async (req, res) => {
         // destructure request body
         const { email, password, name, address } = req.body
 
+
+        // if email is passed to be updated
+        if (email) {
+            const checkUserEmail = await userModels.findOne({ email })
+
+            // check if the email exists
+            if (checkUserEmail) {
+                return res.status(409).json({ message: "Email already exists!" })
+            }
+        }
+
+
         // extract only the keys with values
         const requestObject = {
             email,
